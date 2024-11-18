@@ -12,8 +12,8 @@ This repository contains the implementation of the credit card validation logic,
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Target Framework](#target-framework)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Running Tests](#running-tests)
 
@@ -37,31 +37,31 @@ This repository contains the implementation of the credit card validation logic,
    ```bash
    dotnet restore
    
-  ## Usage
+## Usage
   
-  To run the application, you need to launch the API which is hosted in an ASP.NET Core application.
+To run the application, you need to launch the API which is hosted in an ASP.NET Core application.
   
-  ### Build and run the application:
+### Build and run the application:
   
   ```bash
   dotnet build
   dotnet run
   ```
 
-  The API will be available at https://localhost:7053.
+The API will be available at https://localhost:7053.
   
-  **To test credit card validation, make a POST request to the /Validate endpoint like:**
+**To test credit card validation, make a POST request to the /Validate endpoint like:**
   
   ```bash
   https://localhost:7053/api/CreditCard/Validate/{cardNumber}
   ```
 
-  **You will receive a response indicating whether the card is valid or not.**
+**You will receive a response indicating whether the card is valid or not.**
 
 
-  **Example Response**
+**Example Response**
   
-  For a valid card number:
+For a valid card number:
   ```bash
   {
       "data": "Card number is valid.",
@@ -71,7 +71,7 @@ This repository contains the implementation of the credit card validation logic,
   }
   ```
 
-  For an invalid card number:
+For an invalid card number:
   ```bash
   {
       "data": [],
@@ -83,29 +83,29 @@ This repository contains the implementation of the credit card validation logic,
   }
   ```
 
-  ## Running Tests
+## Running Tests
 
-  This project includes unit tests to verify the functionality of the `CreditCardController`.
+This project includes unit tests to verify the functionality of the `CreditCardController`.
   
-  ### To run the tests, follow these steps:
+### To run the tests, follow these steps:
   
-  1. Navigate to the `CreditCardValidator.Tests` project folder:
+1. Navigate to the `CreditCardValidator.Tests` project folder:
   
   ```bash
   cd CreditCardValidator.Tests
   ```
 
-  2. Run the tests using dotnet:
+2. Run the tests using dotnet:
   
   ```bash
   dotnet test
   ```
   
-  The test results will show whether all tests passed successfully.
+The test results will show whether all tests passed successfully.
   
-  ### Example Test Cases
+### Example Test Cases
   
-  - **Validate_ShouldReturnOk_WhenCardNumberIsValid**: Validates if a correctly formatted card number returns a successful response.
-  - **Validate_ShouldReturnBadRequest_WhenCardNumberIsInvalid**: Validates if an invalid card number returns a `BadRequest` response with an error message.
-  - **Validate_ShouldReturnBadRequest_WhenCardNumberIsEmpty**: Ensures that empty card numbers trigger an error message.
-  - **Validate_ShouldReturnBadRequest_WhenCardNumberContainsNonDigits**: Verifies that card numbers with non-digit characters are rejected.
+- **Validate_ShouldReturnOk_WhenCardNumberIsValid**: Validates if a correctly formatted card number returns a successful response.
+- **Validate_ShouldReturnBadRequest_WhenCardNumberIsInvalid**: Validates if an invalid card number returns a `BadRequest` response with an error message.
+- **Validate_ShouldReturnBadRequest_WhenCardNumberIsEmpty**: Ensures that empty card numbers trigger an error message.
+- **Validate_ShouldReturnBadRequest_WhenCardNumberContainsNonDigits**: Verifies that card numbers with non-digit characters are rejected.
