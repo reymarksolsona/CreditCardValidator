@@ -4,6 +4,6 @@ namespace CreditCardValidator.Services.Interface
 {
     public interface ICreditCardService
     {
-        APIResponse<bool> ValidateCreditCardNumber(string creditCardNumber);
+        APIResponse<string> ValidateCreditCardNumber(string creditCardNumber);
     }
 }

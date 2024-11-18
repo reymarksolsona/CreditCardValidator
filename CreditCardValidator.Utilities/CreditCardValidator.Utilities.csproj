@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CreditCardValidator.Models\CreditCardValidator.Models.csproj" />
+  </ItemGroup>
+
 </Project>

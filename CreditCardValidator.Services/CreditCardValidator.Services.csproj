@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CreditCardValidator.Models\CreditCardValidator.Models.csproj" />
+    <ProjectReference Include="..\CreditCardValidator.Utilities\CreditCardValidator.Utilities.csproj" />
   </ItemGroup>
 
 </Project>
