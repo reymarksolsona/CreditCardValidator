@@ -1,3 +1,4 @@
+using CreditCardValidator.Dependencies;
 
 namespace CreditCardValidator
 {
@@ -8,7 +9,7 @@ namespace CreditCardValidator
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            DependencyInjectionConfig.Setup(builder.Services);
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
