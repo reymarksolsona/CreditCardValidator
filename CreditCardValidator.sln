@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCardValidator.Models"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCardValidator.Services", "CreditCardValidator.Services\CreditCardValidator.Services.csproj", "{93BF39B9-FA40-4510-B9F7-FE462EE02EC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCardValidator.Tests", "CreditCardValidator.Tests\CreditCardValidator.Tests.csproj", "{5272D2BD-A17E-4E19-B212-E012094145B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{93BF39B9-FA40-4510-B9F7-FE462EE02EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93BF39B9-FA40-4510-B9F7-FE462EE02EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93BF39B9-FA40-4510-B9F7-FE462EE02EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5272D2BD-A17E-4E19-B212-E012094145B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5272D2BD-A17E-4E19-B212-E012094145B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5272D2BD-A17E-4E19-B212-E012094145B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5272D2BD-A17E-4E19-B212-E012094145B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -51,9 +51,7 @@ namespace CreditCardValidator.Controllers
 
             if (result.HasError)
             {
-                var errorMessages = result.Errors.Select(e => e.ToString()).ToList();
-
-                LogError(response, errorMessages, HttpStatusCode.BadRequest);
+                LogError(response, result.Errors, HttpStatusCode.BadRequest);
 
                 return StatusCode((int)response.StatusCode, response);
             }
@@ -63,7 +61,7 @@ namespace CreditCardValidator.Controllers
 
         private void LogError<T>(APIResponse<T> response, List<string> errorMessages, HttpStatusCode statusCode)
         {
-            response.Errors.Add(errorMessages);
+            response.Errors.AddRange(errorMessages);
             response.HasError = true;
             response.StatusCode = statusCode;
         }
