@@ -27,7 +27,7 @@ namespace CreditCardValidator.Controllers
         /// <response code="200">Returns the formatted card number if valid.</response>
         /// <response code="400">If the card number is invalid or improperly formatted.</response>
         /// <response code="500">If an unexpected server error occurs.</response>
-        [HttpGet("{cardNumber}")]
+        [HttpGet("Validate/{cardNumber}")]
         [ProducesResponseType(typeof(APIResponse<string>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(APIResponse<string>), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
